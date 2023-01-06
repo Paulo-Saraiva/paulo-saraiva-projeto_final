@@ -1,0 +1,230 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0; 
+ }
+ :root{
+     --tipo-de-letra: "Nunito ", Helvitica, arial, sans-sarif;
+     --verde-escuro:#049A40;
+     --verde-claro:#0BF96A;
+     --rosa-escuro:#E10BF9;
+     --rosa-claro:#F3a0fd;
+     --branco:#fff;
+     --preto:#000;
+ 
+ }
+ 
+ body{
+ 
+     background-color: var(--branco);
+     font-family: var(--tipo-de-letra);
+     width: 100%;
+     height: 100%;
+ 
+ }
+ 
+ a{
+     color: var(--preto);
+     text-decoration: none;
+ }
+ a:hover{
+     color: black;
+     background-color:transparent;
+ 
+   
+  
+ }
+ 
+ .menu-bg{
+     background-color: var(--branco);
+ }
+ .menu{
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     padding: 1.5rem 6rem;
+ }
+ .menu_logo{
+     margin: 10px;
+     align-items: center;
+ }
+ .nav_lista{
+     display: flex;
+     list-style: none;
+     flex-wrap: wrap;
+     list-style: none;
+ }
+ .nav_item{
+     margin: 0 15px;
+ }
+ .nav_link{
+     padding: 20px 10px;
+     text-decoration: none;
+     font-size: 1.15rem;
+     color: rgb(6, 0, 0);
+     font-weight: 400;
+ 
+ }
+ .mobile-menu-icon{
+     display: none;
+ }
+ .mobile-menu{
+     display: none;
+ }
+ .intro{
+     font-weight: bold;
+     font-size: 3rem;
+     text-align: center;
+     margin: 0 auto;
+     padding: 25px 0;
+ }
+ hr{
+     border:none;
+     background-color: #E38523;
+     height: 2px;
+     width: 1110px;
+     margin: 20px auto;
+ }
+ p{
+     line-height: 21.82px;
+     padding: 0 10px;
+ }
+ 
+ .sessao_titulo{
+ text-align: center;
+ font-size: 3rem;
+ margin-bottom: 10px;
+ }
+ 
+
+ img{
+     display: block;
+     max-width: 100%;
+ }
+ 
+
+ ul{
+     list-style: none;
+ }
+
+
+
+.vantagens {color: #F3B313;  }
+
+ .vantagens a {
+    color: #F3B313; }
+
+ .vantagens {
+    
+     max-width: 960px;
+     margin: 0 auto;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+    
+ 
+ }
+ .vantagem{
+     max-width: 240px;
+     margin: 10px;
+ }
+ .vatagem__titulo{
+    color: black;
+     font-size: 1.7rem;
+     margin-bottom: 5px;
+     margin-left: 10px;
+ }
+
+
+ .vatagem__titulo::before{
+     content: "";
+     display: inline-block;
+     width: 10px;
+     height: 25px;
+     margin-right: 5px;
+ }
+ .vantagem:nth-of-type(3n+1 ) .vatagem__titulo::before{
+     background-color: #E38523;
+ }
+ .vantagem:nth-of-type(3n+2 ) .vatagem__titulo::before{
+     background-color:#E38523;
+ }
+ .vantagem:nth-of-type(3n+3 ) .vatagem__titulo::before{
+     background-color: #E38523;
+ }
+
+
+
+
+
+
+
+
+
+
+
+ .footer{
+     background-color: #FDF6B0;
+     display: flex;
+     justify-content: space-around;
+    padding: 20px;
+ 
+
+ }
+
+ .footer2{
+    background-color: #F3B313;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.footer__copyright2 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+ 
+ @media screen and (max-width:730px) {
+     .nav-bar{
+         padding: 1.5rem 4rem;
+     }
+     .nav_item{
+         display: none;
+     }
+     .login-button{
+         display: none;
+     }
+     .mobile-menu-icon{
+         display: block;
+     }
+     .mobile-menu-icon button{
+         background-color: transparent;
+         border: none;
+         cursor: pointer;
+     }
+     .mobile-menu ul{
+         display: flex;
+         flex-direction: column;
+         text-align: center;
+         padding-bottom: 1rem;
+     }
+     .mobile-menu .nav-item{
+         display: block;
+         padding-top: 1rem;
+     }
+     .mobile-menu .login-button{
+         display: block;
+         padding: 1rem 2rem;
+     }
+     .mobile-menu .login-button button{
+         width: 100%;
+     }
+     .open{
+         display: block;
+     }
+     .nav{
+         display: none;
+     }
+ }
+ 
